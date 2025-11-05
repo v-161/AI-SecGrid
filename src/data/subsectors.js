@@ -1,0 +1,18 @@
+export const initialSectors = [
+  { id: 1, name: "Chemical", x: 12, y: 18, status: "secure" },
+  { id: 2, name: "Commercial Facilities", x: 25, y: 35, status: "secure" },
+  { id: 3, name: "Communications", x: 42, y: 12, status: "secure" },
+  { id: 4, name: "Critical Manufacturing", x: 55, y: 40, status: "secure" },
+  { id: 5, name: "Dams", x: 68, y: 22, status: "secure" },
+  { id: 6, name: "Defense Industrial Base", x: 82, y: 30, status: "secure" },
+  { id: 7, name: "Emergency Services", x: 15, y: 55, status: "secure" },
+  { id: 8, name: "Energy", x: 35, y: 28, status: "secure" },
+  { id: 9, name: "Financial Services", x: 50, y: 18, status: "secure" },
+  { id: 10, name: "Food & Agriculture", x: 10, y: 70, status: "secure" },
+  { id: 11, name: "Government Facilities", x: 65, y: 35, status: "secure" },
+  { id: 12, name: "Healthcare & Public Health", x: 45, y: 75, status: "secure" },
+  { id: 13, name: "Information Technology", x: 78, y: 18, status: "secure" },
+  { id: 14, name: "Nuclear Reactors/Materials", x: 85, y: 50, status: "secure" },
+  { id: 15, name: "Transportation", x: 58, y: 85, status: "secure" },
+  { id: 16, name: "Water & Wastewater", x: 30, y: 88, status: "secure" },
+];
