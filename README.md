@@ -1,16 +1,78 @@
-# React + Vite
+# AI-SecGrid
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AI-SecGrid** is a React-based cybersecurity simulation dashboard for **Critical Infrastructure (CI)**.  
+It visualizes multiple CI sectors on a city map, simulates threats in real-time, and demonstrates **AI-driven defense mechanisms**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features**
 
-## React Compiler
+- **Interactive Map:**  
+  Each critical infrastructure sector (Chemical, Energy, Transportation, etc.) is marked on a city map. Click to view status.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Threat Simulation:**  
+  - Real-time intrusion detection (simulated IPs).  
+  - Single or multiple attacks can occur randomly every 15–30 seconds.  
+  - Threats are visually marked in red; secure sectors in green.  
+  - AI-style heuristic defense automatically mitigates threats after detection.
 
-## Expanding the ESLint configuration
+- **System Logs:**  
+  A console panel logs all security events with timestamps, showing detection and mitigation events.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Splash Screen:**  
+  Full-page loading GIF before the dashboard loads.
+
+- **Simple UI/UX:**  
+  Sci-fi hacker-style interface with black and white theme, minimalistic design, and red for threat markers.
+
+---
+
+## **Concept of AI**
+
+While this is a simulation, it incorporates **AI-inspired concepts**:
+
+- **Heuristic Defense:** Threats are detected and mitigated automatically, mimicking AI-based monitoring.  
+- **Randomized Threat Patterns:** Multiple attacks simulate unpredictable behavior in real networks.  
+- **Real-time Response:** Instant updates on threat status, simulating AI-driven decision making.
+
+---
+
+## **Installation & Run**
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/AI-SecGrid.git
+cd AI-SecGrid
+Install dependencies:
+
+bash
+Copy code
+npm install
+Run the app:
+
+bash
+Copy code
+npm run dev
+Open the browser at http://localhost:5173/ (Vite default port).
+
+Folder Structure
+pgsql
+Copy code
+AI-SecGrid/
+├─ public/
+│  └─ index.html
+├─ src/
+│  ├─ assets/
+│  │  ├─ citymap.jpg
+│  │  └─ loading.gif
+│  ├─ components/
+│  ├─ data/
+│  │  └─ subsectors.js
+│  ├─ utils/
+│  │  └─ threatSimulator.js
+│  ├─ App.jsx
+│  ├─ index.css
+│  └─ main.jsx
+├─ package.json
+└─ README.md
