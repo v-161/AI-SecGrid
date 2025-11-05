@@ -39,24 +39,26 @@ While this is a simulation, it incorporates **AI-inspired concepts**:
 
 ## **Installation & Run**
 
-1. Clone the repository:
-
 ```bash
+//Clone the repository:
+
 git clone https://github.com/<your-username>/AI-SecGrid.git
 cd AI-SecGrid
 Install dependencies:
-
-bash
-Copy code
+```
+```bash
+//Copy code
 npm install
-Run the app:
-
-bash
-Copy code
+```
+```bash
+//Run the app:
 npm run dev
-Open the browser at http://localhost:5173/ (Vite default port).
+Open the browser at http://localhost:5173/.
+//default
+```
+```bash
+//Folder Structure
 
-Folder Structure
 pgsql
 Copy code
 AI-SecGrid/
@@ -74,5 +76,7 @@ AI-SecGrid/
 │  ├─ App.jsx
 │  ├─ index.css
 │  └─ main.jsx
+|
 ├─ package.json
 └─ README.md
+```
