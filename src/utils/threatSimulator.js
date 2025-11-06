@@ -5,7 +5,7 @@ export const startThreatSimulation = (sectors, setSectors, addLog) => {
   simulationStarted = true;
 
   const scheduleNext = () => {
-    const nextInterval = 15000 + Math.floor(Math.random() * 15000); // 15s–30s
+    const nextInterval = 10000 + Math.floor(Math.random() * 5000); // 10s–15s
 
     setTimeout(() => {
       // attacks range (1–3)
