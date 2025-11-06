@@ -19,6 +19,9 @@ It visualizes multiple CI sectors on a city map, simulates threats in real-time,
 - **System Logs:**  
   A console panel logs all security events with timestamps, showing detection and mitigation events.
 
+  - **Report Generation:**  
+  Download system activity and threat report, showing real time date-time for respective threat. 
+
 - **Splash Screen:**  
   Full-page loading GIF before the dashboard loads.
 
